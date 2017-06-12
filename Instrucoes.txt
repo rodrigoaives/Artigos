@@ -1,0 +1,9 @@
+Logins: 
+
+Usuário: autor / Senha: 123
+Usuário: revisor / Senha: 123
+Usuário: autor / Senha: 123
+
+1. Autor cria o Artigo;
+2. Revisor verifica o artigo e aprova ou reprova (insere a justificativa);
+3. O Autor verifica nos Artigos Enviados se o Artigo foi aprovado, e se estiver com o Status "Aprovado" ele envia a versão final, alterando automaticamente o Status para "Publicado".
