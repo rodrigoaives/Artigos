@@ -116,7 +116,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Artigos.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(100, 73);
+            this.pictureBox1.Location = new System.Drawing.Point(100, 68);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(105, 106);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
