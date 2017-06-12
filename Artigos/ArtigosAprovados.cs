@@ -58,15 +58,9 @@ namespace Artigos
                 return;
 
             //Recuperar a linha selecionadas.
-            //ArtigoSelecionado = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-
+            ArtigoSelecionado = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             //Fechar a tela
             Hide();
-        }
-
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

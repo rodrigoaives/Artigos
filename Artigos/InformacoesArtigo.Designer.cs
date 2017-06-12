@@ -51,6 +51,7 @@
             this.txtStatus = new System.Windows.Forms.TextBox();
             this.lblStatus = new System.Windows.Forms.Label();
             this.areaInteresseTableAdapter = new Artigos.databaseDataSetTableAdapters.AreaInteresseTableAdapter();
+            this.timerDownload = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.areaInteresseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             this.SuspendLayout();
@@ -180,6 +181,7 @@
             this.button1.TabIndex = 26;
             this.button1.Text = "Baixar artigo";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnReprovados
             // 
@@ -263,6 +265,11 @@
             // 
             this.areaInteresseTableAdapter.ClearBeforeFill = true;
             // 
+            // timerDownload
+            // 
+            this.timerDownload.Interval = 5000;
+            this.timerDownload.Tick += new System.EventHandler(this.timerDownload_Tick);
+            // 
             // InformacoesArtigo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,5 +328,6 @@
         private databaseDataSet databaseDataSet;
         private System.Windows.Forms.BindingSource areaInteresseBindingSource;
         private databaseDataSetTableAdapters.AreaInteresseTableAdapter areaInteresseTableAdapter;
+        private System.Windows.Forms.Timer timerDownload;
     }
 }

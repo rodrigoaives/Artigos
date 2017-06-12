@@ -297,5 +297,17 @@ namespace Artigos
                 conn.Dispose();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Fazendo o download do Artigo, por favor aguarde.");
+            timerDownload.Start();
+        }
+
+        private void timerDownload_Tick(object sender, EventArgs e)
+        {
+            timerDownload.Stop();
+            MessageBox.Show("Download Concluído.");
+        }
     }
 }
