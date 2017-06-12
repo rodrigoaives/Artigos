@@ -70,7 +70,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(199, 82);
+            this.txtBuscar.Location = new System.Drawing.Point(208, 82);
             this.txtBuscar.Multiline = true;
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(325, 24);
